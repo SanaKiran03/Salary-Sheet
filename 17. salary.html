@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///E:/Assignments%20Aptech/table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+</head>
+<body>
+  <script>
+    // Program for a simple calculator
+    let health = 2000;
+    let rent = 12000;
+	let conveynce = 5000;
+	let cash = 5000;
+	let overtime = 1000;
+	let entertainment = 5000;
+    let net = 0;
+	let allowance;
+
+    // Take the salary input
+    let salary = prompt('Enter your salary');
+
+    // Check if the salary is within the specified range
+     if (salary < 50000) {
+       allowance = health;
+      net = parseInt(salary) + allowance;
+      document.write("Salary: " + salary + "<br>");
+      document.write("Allowance: " + allowance + "<br>");
+      document.write("Net Salary: " + net);
+    }
+	else if (salary >= 50000 && salary < 100000) {
+       allowance = health + rent;
+      net = parseInt(salary) + allowance;
+      document.write("Salary: " + salary + "<br>");
+      document.write("Allowance: " + allowance + "<br>");
+      document.write("Net Salary: " + net);
+    } 
+	else if (salary >= 100000 && salary < 150000) {
+       allowance = health + rent + conveynce + cash;
+      net = parseInt(salary) + allowance;
+      document.write("Salary: " + salary + "<br>");
+      document.write("Allowance: " + allowance + "<br>");
+      document.write("Net Salary: " + net);
+    }
+	else if (salary >= 150000 && salary < 200000) {
+      allowance = health + rent + conveynce + cash + overtime + entertainment;
+      net = parseInt(salary) + allowance;
+      document.write("Salary: " + salary + "<br>");
+      document.write("Allowance: " + allowance + "<br>");
+      document.write("Net Salary: " + net);
+    }
+	else if (salary == 200000) {    
+      document.write("Salary: " + salary + "<br>");
+      document.write("your salary also to much no allowances" + "<br>");
+	  document.write("its not fair" + "<br>");
+    }	
+	else {
+      document.write("Invalid salary");
+    }
+  </script>
+</body>
+</html>
